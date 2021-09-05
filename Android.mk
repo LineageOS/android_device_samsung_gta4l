@@ -24,12 +24,20 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),gta4l)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
+CNE_LIBS := libvndfwk_detect_jni.qti.so
+CNE_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR_APPS)/CneApp/lib/arm64/,$(notdir $(CNE_LIBS)))
+$(CNE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "CNE lib link: $@"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf /vendor/lib64/$(notdir $@) $@
+
 WLANMDSP_DUMMY_FILE := $(TARGET_OUT_VENDOR)/firmware/wlanmdsp.mbn
 $(WLANMDSP_DUMMY_FILE): $(LOCAL_INSTALLED_MODULE)
 	@echo "Dummy WLAN firmware file: $@"
 	@mkdir -p $(dir $@)
 	@echo -n > $@
 
-ALL_DEFAULT_INSTALLED_MODULES += $(WLANMDSP_DUMMY_FILE)
+ALL_DEFAULT_INSTALLED_MODULES += $(CNE_SYMLINKS) $(WLANMDSP_DUMMY_FILE)
 
 endif
