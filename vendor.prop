@@ -1,0 +1,12 @@
+# RIL
+ro.carrier=unknown
+ro.radio.noril=no
+ro.telephony.default_network=9
+ro.vendor.epdg.support=true
+ro.vendor.multisim.simslotcount=1
+ro.vendor.use_data_netmgrd=false
+persist.radio.multisim.config=ss
+vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
+ro.vendor.sec.radio.def_network=9
+ro.telephony.default_cdma_sub=0
+persist.vendor.cne.feature=0
