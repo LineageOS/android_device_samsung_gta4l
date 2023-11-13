@@ -120,3 +120,9 @@ vendor/firmware/wlan/qca_cld/regdb.bin
 
 # WiFi firmware (for SM-T505 model)
 vendor/firmware/wlanmdsp.mbn:vendor/firmware/wlanmdsp_SM-T505.mbn
+
+# WiFi firmware (for SM-T505C model - from Samsung package version T505CZCU4CWD2)
+vendor/firmware/wlanmdsp.mbn:vendor/firmware/wlanmdsp_SM-T505C.mbn|38a7fd3da30f442eca9d320a29ce3a2434e46ee6
+
+# WiFi firmware (for SM-T505N model - from Samsung package version T505NDXS5CWI2)
+vendor/firmware/wlanmdsp.mbn:vendor/firmware/wlanmdsp_SM-T505N.mbn|6d7336c4390679fe0c6cc17bb6331b1a19ac93c1
