@@ -37,6 +37,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml
 
+# Rotation
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.bootanim.set_orientation_4630946488205922177=ORIENTATION_90
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
