@@ -34,6 +34,7 @@ vendor/lib64/vendor.samsung.hardware.radio@2.1.so
 vendor/lib64/vendor.samsung.hardware.radio@2.2.so
 
 # CNE
+vendor/app/CneApp/CneApp.apk
 vendor/bin/cnd
 vendor/bin/mutualex
 vendor/etc/cne/mwqem.conf
