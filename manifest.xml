@@ -37,6 +37,24 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.data.factory</name>
+        <transport>hwbinder</transport>
+	<version>2.3</version>
+        <interface>
+            <name>IFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.data.latency</name>
+        <transport>hwbinder</transport>
+	<version>1.0</version>
+	<interface>
+	    <name>ILinkLatency</name>
+            <instance>default</instance>
+	</interface>
+    </hal>
+    <hal format="hidl">
         <name>vendor.samsung.hardware.radio</name>
         <transport>hwbinder</transport>
         <version>2.2</version>
