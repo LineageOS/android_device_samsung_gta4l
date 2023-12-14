@@ -123,3 +123,6 @@ vendor/firmware/wlanmdsp.mbn:vendor/firmware/wlanmdsp_SM-T505C.mbn|38a7fd3da30f4
 
 # WiFi firmware (for SM-T505N model - from Samsung package version T505NDXS5CWI2)
 vendor/firmware/wlanmdsp.mbn:vendor/firmware/wlanmdsp_SM-T505N.mbn|6d7336c4390679fe0c6cc17bb6331b1a19ac93c1
+
+# WiFi firmware (for SM-T507 model - from Samsung package version T507JXS5CWI2)
+vendor/firmware/wlanmdsp.mbn:vendor/firmware/wlanmdsp_SM-T507.mbn|dbc61672b0db63d20eb4f4cd2de429f35460ef91
