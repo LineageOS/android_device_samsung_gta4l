@@ -43,10 +43,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.radio@1.5.vendor \
-    librmnetctl \
     libxml2 \
     secril_config_svc \
     vendor.samsung.hardware.radio@2.2
