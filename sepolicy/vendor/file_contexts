@@ -1,1 +1,2 @@
 /data/vendor/secradio(/.*)?  u:object_r:radio_vendor_data_file:s0
+/(vendor|system/vendor)/bin/hw/sehradiomanager u:object_r:sehradiomanager_exec:s0
