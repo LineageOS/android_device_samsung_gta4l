@@ -45,6 +45,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     libxml2 \
     secril_config_svc \
+    sehradiomanager \
     vendor.samsung.hardware.radio@2.2
 
 # Inherit from gta4l-common
